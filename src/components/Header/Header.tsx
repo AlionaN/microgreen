@@ -1,14 +1,13 @@
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { NavLink } from 'react-router-dom';
+import Logo from '../Logo';
 import styles from './Header.module.scss';
 
 function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.headerInner}>
-        <NavLink className={styles.headerLogo} to="/">
-          Micro
-        </NavLink>
+        <Logo />
         <nav className={styles.nav}>
           <ul className={styles.navList}>
             <li className={styles.navListItem}><NavLink to="/shop">Products</NavLink></li>
