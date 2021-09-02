@@ -1,12 +1,12 @@
-import './Button.module.scss';
+import styles from './Button.module.scss';
 
 interface IProps {
   btnText: string
 }
 
-function Button(btnText: IProps) {
+function Button({ btnText }: IProps) {
   return (
-    <button type="button" className="btn">{btnText}</button>
+    <button type="button" className={styles.btn}>{btnText}</button>
   );
 }
 
