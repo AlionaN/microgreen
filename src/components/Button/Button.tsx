@@ -1,6 +1,10 @@
 import './Button.module.scss';
 
-function Button(btnText) {
+interface IProps {
+  btnText: string
+}
+
+function Button(btnText: IProps) {
   return (
     <button type="button" className="btn">{btnText}</button>
   );

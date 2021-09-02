@@ -1,6 +1,11 @@
 import styles from './Card.module.scss';
+import { ICard } from '../../shared/interfaces/card.interface';
 
-function Card(card) {
+type IProps = {
+  card: ICard
+}
+
+function Card(card: IProps) {
   const { image, title, price } = card.card;
   return (
     <li className={styles.card}>

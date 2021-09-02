@@ -1,7 +1,12 @@
 import styles from './Cards.module.scss';
 import Card from '../Card';
+import { ICard } from '../../shared/interfaces/card.interface';
 
-function Cards(cardsList) {
+interface IProps {
+  cardsList: ICard[]
+}
+
+function Cards(cardsList: IProps) {
   const cardsArray = cardsList.cardsList;
   return (
     <ul className={styles.cardList}>
