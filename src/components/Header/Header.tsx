@@ -1,4 +1,4 @@
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import { FaShoppingCart } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import Logo from '../Logo';
 import styles from './Header.module.scss';
@@ -19,7 +19,7 @@ function Header() {
         </nav>
         <div className={styles.userFunc}>
           <div className={styles.userFuncAuth}>Log in</div>
-          <ShoppingCartIcon />
+          <FaShoppingCart />
         </div>
       </div>
     </header>
