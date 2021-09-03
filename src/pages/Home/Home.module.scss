@@ -1,7 +1,7 @@
+@import '../../mixins.scss';
 .about {
   display: flex;
-  width: 90%;
-  margin: 20px auto;
+  @include container;
   &Img {
     width: 50%;
     height: 100%;
@@ -10,8 +10,7 @@
   &Info {
     margin-left: 20px;
     &Title {
-      font-weight: bold;
-      font-size: 2rem;
+      @include title;
       margin-bottom: 10px;
     }
   }
@@ -21,25 +20,14 @@
   margin: 20px auto;
   text-align: center;
   &Title {
-    font-weight: bold;
-    font-size: 2rem;
+    @include title;
     margin-bottom: 10px;
     text-align: center;
   }
 }
 .toShop {
-  background-color: #ffffff;
-  color: #121212;
-  box-shadow: 1px 1px 4px #000;
-  margin-top: 10px;
-  border: none;
-  border-radius: 5px;
-  padding: 7px 15px;
-  text-decoration: none;
-  transition: .5s all;
+  @include shadowedBtn;
   &:hover {
-    background-color: #6d9767;
-    color: #fff;
-    cursor: pointer;
+    @include shadowedBtnHover;
   }
 }

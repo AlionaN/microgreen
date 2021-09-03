@@ -1,3 +1,4 @@
+@import '../../mixins.scss';
 .hero {
   height: 90vh;
   display: grid;
@@ -31,19 +32,9 @@
     font-size: 1.5rem;
   }
   .btn {
-    background-color: #ffffff;
-    color: #121212;
-    box-shadow: 1px 1px 4px #000;
-    margin-top: 10px;
-    border: none;
-    border-radius: 5px;
-    padding: 7px 15px;
-    text-decoration: none;
-    transition: .5s all;
+    @include shadowedBtn;
     &:hover {
-      background-color: #6d9767;
-      color: #fff;
-      cursor: pointer;
+      @include shadowedBtnHover;
     }
   }
 }
