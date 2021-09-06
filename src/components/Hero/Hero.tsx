@@ -1,8 +1,9 @@
 import { NavLink } from 'react-router-dom';
 import styles from './Hero.module.scss';
+import IMG_PATH from '../../constants';
 
 function Hero() {
-  const img = `${process.env.PUBLIC_URL}/assets/images/hero.jpg`;
+  const img = `${IMG_PATH}hero.jpg`;
   return (
     <div className={styles.hero} style={{ backgroundImage: `url(${img})` }}>
       <div className={`${styles.heroText} ${styles.heroTextRight}`}>Micro</div>

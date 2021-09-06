@@ -1,6 +1,7 @@
 import styles from './Card.module.scss';
 import Button from '../Button';
 import { ICard } from '../../shared/interfaces/card.interface';
+import IMG_PATH from '../../constants';
 
 type IProps = {
   card: ICard
@@ -10,7 +11,7 @@ function Card({ card }: IProps) {
   const { image, title, price } = card;
   return (
     <li className={styles.card}>
-      <img src={`${process.env.PUBLIC_URL}/assets/images/${image}`} className={styles.cardImg} alt={title} />
+      <img src={`${IMG_PATH}${image}`} className={styles.cardImg} alt={title} />
       <div className={styles.cardInfo}>
         <div className={styles.cardInfoTitle}>{title}</div>
         <div className={styles.cardInfoPrice}>

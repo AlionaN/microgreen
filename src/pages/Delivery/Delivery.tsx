@@ -1,7 +1,6 @@
 /* eslint-disable max-len */
 import styles from './Delivery.module.scss';
-
-const imgsPath = `${process.env.PUBLIC_URL}/assets/images/`;
+import IMG_PATH from '../../constants';
 
 function Delivery() {
   return (
@@ -9,24 +8,24 @@ function Delivery() {
       <div className={styles.deliveryTitle}>Delivery</div>
       <div className={styles.deliveryVars}>
         <div className={styles.deliveryVarsItem}>
-          <img className={styles.deliveryVarsItemImg} src={`${imgsPath}meest.png`} alt="Meest" />
+          <img className={styles.deliveryVarsItemImg} src={`${IMG_PATH}meest.png`} alt="Meest" />
           <div className={styles.deliveryVarsItemTitle}>Meest Express</div>
           <div className={styles.deliveryVarsItemText}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
         </div>
         <div className={styles.deliveryVarsItem}>
-          <img className={styles.deliveryVarsItemImg} src={`${imgsPath}np.jpg`} alt="Nova Poshta" />
+          <img className={styles.deliveryVarsItemImg} src={`${IMG_PATH}np.jpg`} alt="Nova Poshta" />
           <div className={styles.deliveryVarsItemTitle}>Nova Poshta</div>
           <div className={styles.deliveryVarsItemText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
         </div>
         <div className={styles.deliveryVarsItem}>
-          <img className={styles.deliveryVarsItemImg} src={`${imgsPath}ukrposhta.jpg`} alt="Ukrposhta" />
+          <img className={styles.deliveryVarsItemImg} src={`${IMG_PATH}ukrposhta.jpg`} alt="Ukrposhta" />
           <div className={styles.deliveryVarsItemTitle}>Ukrposhta</div>
           <div className={styles.deliveryVarsItemText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
         </div>
         <div className={styles.deliveryVarsItem}>
-          <img className={styles.deliveryVarsItemImg} src={`${imgsPath}self-pickup.jpg`} alt="Selt Pickup" />
+          <img className={styles.deliveryVarsItemImg} src={`${IMG_PATH}self-pickup.jpg`} alt="Selt Pickup" />
           <div className={styles.deliveryVarsItemTitle}>Self Pickup</div>
           <div className={styles.deliveryVarsItemText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
         </div>
