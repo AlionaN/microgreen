@@ -22,8 +22,29 @@ module.exports = {
   settings: {
     'import/resolver': {
       typescript: {},
+      alias: {
+        map: [
+          // And all your import aliases
+          ['@components', './src/components/'],
+          ['@constants', './src/constants/'],
+          ['@enums', './src/enums/'],
+          ['@features', './src/features/'],
+          ['@interfaces', './src/interfaces/'],
+          ['@pages', './src/pages/'],
+          ['@router', './src/router/'],
+        ],
+        extensions: ['.ts', '.js', '.jsx', '.json'],
+      },
     },
   },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      rules: {
+        'no-undef': 'off',
+      },
+    },
+  ],
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
@@ -41,5 +62,6 @@ module.exports = {
       },
     ],
     'arrow-body-style': 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
   },
 };

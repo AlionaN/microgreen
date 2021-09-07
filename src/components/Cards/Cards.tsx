@@ -1,6 +1,6 @@
 import styles from './Cards.module.scss';
 import Card from '../Card';
-import { ICard } from '../../shared/interfaces/card.interface';
+import { ICard } from '../../interfaces/card.interface';
 
 interface IProps {
   cardsList: ICard[]

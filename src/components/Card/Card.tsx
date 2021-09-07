@@ -1,6 +1,6 @@
 import styles from './Card.module.scss';
 import Button from '../Button';
-import { ICard } from '../../shared/interfaces/card.interface';
+import { ICard } from '../../interfaces/card.interface';
 import IMG_PATH from '../../constants';
 
 type IProps = {
